@@ -1,10 +1,13 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 html, body {
   height: 100%;
 }
 
 body {
-  margin: 0;
-  padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -12,17 +15,194 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background: black;
-  color: white;
-}
-
-body button {
-  cursor: pointer;
 }
 
 body .body-element {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+}
+
+body .header, body .editor-section, body .footer {
+  padding-left: 125px;
+  padding-right: 125px;
+}
+
+body .header {
+  border-bottom-left-radius: 75px;
+  background-color: #ff525d;
+  background-image: url("/images/bg-pattern-intro-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: 150%;
+  background-position: 20% 50%;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body .header button {
+  border-radius: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-style: solid;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+body .header .login-btn, body .header .signup-btn, body .header .start-btn {
+  border-width: 3px;
+}
+
+body .header .nav-container, body .header .title-container {
+  padding-bottom: 150px;
+}
+
+body .header .nav-container {
+  padding-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 50px;
+}
+
+body .header .nav-container .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 25px;
+}
+
+body .header .nav-container .buttons-container {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .header .nav-container .buttons-container .login-btn, body .header .nav-container .buttons-container .signup-btn {
+  padding-left: 30px;
+  padding-right: 30px;
+  border-color: transparent;
+}
+
+body .header .nav-container .buttons-container .login-btn:hover, body .header .nav-container .buttons-container .signup-btn:hover {
+  border-color: white;
+}
+
+body .header .nav-container .buttons-container .login-btn {
+  background: transparent;
+  color: white;
+}
+
+body .header .nav-container .buttons-container .signup-btn {
+  background: white;
+  color: #ff525d;
+}
+
+body .header .nav-container .buttons-container .signup-btn:hover {
+  background: transparent;
+  color: white;
+}
+
+body .header .title-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .header .title-container h1 {
+  font-size: 50px;
+}
+
+body .header .title-container p {
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+body .header .title-container .buttons-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+
+body .header .title-container .buttons-container .start-btn {
+  padding-left: 10px;
+  padding-right: 10px;
+  background: white;
+  color: #ff525d;
+  border-color: transparent;
+}
+
+body .header .title-container .buttons-container .start-btn:hover {
+  background: transparent;
+  color: white;
+  border-color: white;
+}
+
+body .header .title-container .buttons-container .learn-btn {
+  padding-left: 15px;
+  padding-right: 15px;
+  border-color: white;
+  background: transparent;
+  color: white;
+  border-width: 2px;
+}
+
+body .header .title-container .buttons-container .learn-btn:hover {
+  border-color: transparent;
+  color: #ff525d;
+  background: white;
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,123 @@
+.header {
+    border-bottom-left-radius: 75px;
+    background-color: $lightRed;
+    background-image: url('/images/bg-pattern-intro-desktop.svg');
+    background-repeat: no-repeat;
+    background-size: 150%;
+    background-position: 20% 50%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+
+    button {
+        border-radius: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-style: solid;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    .login-btn, .signup-btn, .start-btn {
+        border-width: 3px;
+    }
+
+    .nav-container, .title-container {
+        padding-bottom: 150px;
+    }
+
+    .nav-container {
+        padding-top: 50px;
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: center;
+        gap: 50px;
+
+        .nav {
+            display: flex;
+            flex-direction: row;
+            gap: 25px;
+        }
+
+        .buttons-container {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: row;
+            justify-content: end;
+            align-items: center;
+
+            .login-btn, .signup-btn {
+                padding-left: 30px;
+                padding-right: 30px;
+                border-color: transparent;
+
+                &:hover {
+                    border-color: white;
+                }
+            }
+
+            .login-btn {
+                background: transparent;
+                color: white;
+            }
+
+            .signup-btn {
+                background: white;
+                color: $lightRed;
+
+                &:hover {
+                    background: transparent;
+                    color: white;
+                }
+            }
+        }
+    }
+
+    .title-container {
+        @include flexCenter(column);
+
+        h1 {
+            font-size: 50px;
+        }
+
+        p {
+            margin-top: 20px;
+            margin-bottom: 40px;
+        }
+
+        .buttons-container {
+            @include flexCenter(row);
+            gap: 10px;
+
+            .start-btn {
+                padding-left: 10px;
+                padding-right: 10px;
+                background: white;
+                color: $lightRed;
+                border-color: transparent;
+
+                &:hover {
+                    background: transparent;
+                    color: white;
+                    border-color: white;
+                }
+            }
+
+            .learn-btn {
+                padding-left: 15px;
+                padding-right: 15px;
+                border-color: white;
+                background: transparent;
+                color: white;
+                border-width: 2px;
+
+                &:hover {
+                    border-color: transparent;
+                    color: $lightRed;
+                    background: white;
+                }
+            }
+        }
+    }
+}
