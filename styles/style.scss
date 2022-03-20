@@ -1,4 +1,6 @@
 $lightRed: hsl(356, 100%, 66%);
+$veryDarkBlue: hsl(208, 49%, 24%);
+$darkGray: rgb(100, 100, 100);
 
 @font-face {
     font-family: "Overpass Light";
@@ -31,9 +33,13 @@ body {
     }
 
     .header, .editor-section, .footer {
-        padding-left: 125px;
-        padding-right: 125px;
+        padding-left: 100px;
+    }
+
+    .header, .footer {
+        padding-right: 100px;
     }
 
     @import "./sass-components/header";
+    @import "./sass-components/main";
 }

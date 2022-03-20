@@ -1,0 +1,60 @@
+.main {
+    .section {
+        border: 3px solid green;
+    }
+
+    .editor-section {
+        padding-top: 50px;
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+
+        .title-container {
+            grid-column: 2 / 4;
+            grid-row: 1 / 2;
+            @include flexCenter(row);
+
+            .title {
+                font-size: 35px;
+                color: $veryDarkBlue;
+            }
+        }
+
+        .text-container {
+            grid-column: 1 / 3;
+            grid-row: 2 / 4;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 40px;
+            padding: 20px;
+
+            .text-1, .text-2 {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                padding-bottom: 20px;
+
+                h3 {
+                    font-size: 25px;
+                    color: $veryDarkBlue;
+                }
+
+                p {
+                    font-size: 16px;
+                    color: $darkGray;
+                }
+            }
+        }
+
+        .image-container {
+            grid-column: 3 / 6;
+            grid-row: 1 / 5;
+            overflow: hidden;
+
+            .image {
+                height: 100%;
+                width: 140%;
+            }
+        }
+    }
+}
