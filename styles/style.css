@@ -1,6 +1,12 @@
+@font-face {
+  font-family: "Overpass Light";
+  src: url("../fonts/Overpass/static/Overpass-Light.ttf");
+}
+
 * {
   margin: 0;
   padding: 0;
+  font-family: "Overpass Light";
 }
 
 html, body {
@@ -59,7 +65,7 @@ body .header .login-btn, body .header .signup-btn, body .header .start-btn {
 }
 
 body .header .nav-container, body .header .title-container {
-  padding-bottom: 150px;
+  padding-bottom: 125px;
 }
 
 body .header .nav-container {

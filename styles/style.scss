@@ -1,5 +1,10 @@
 $lightRed: hsl(356, 100%, 66%);
 
+@font-face {
+    font-family: "Overpass Light";
+    src: url("../fonts/Overpass/static/Overpass-Light.ttf");
+}
+
 @mixin flexCenter($direction) {
     display: flex;
     flex-direction: $direction;
@@ -10,6 +15,7 @@ $lightRed: hsl(356, 100%, 66%);
 * {
     margin: 0;
     padding: 0;
+    font-family: "Overpass Light";
 }
 
 html, body {
