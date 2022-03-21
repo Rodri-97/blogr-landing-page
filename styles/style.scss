@@ -2,6 +2,7 @@ $lightRed: hsl(356, 100%, 66%);
 $veryDarkBlue: hsl(208, 49%, 24%);
 $grayBlue: hsl(237, 17%, 21%);
 $darkGray: rgb(100, 100, 100);
+$transparentWhite: rgba(255, 255, 255, 0.5);
 
 @font-face {
     font-family: "Overpass Light";
@@ -43,4 +44,5 @@ body {
 
     @import "./sass-components/header";
     @import "./sass-components/main";
+    @import "./sass-components/footer";
 }
