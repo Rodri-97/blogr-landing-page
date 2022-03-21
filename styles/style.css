@@ -456,6 +456,7 @@ body .footer {
           flex-direction: row;
   padding-top: 75px;
   padding-bottom: 75px;
+  border-top-right-radius: 75px;
 }
 
 body .footer .logo-container {
