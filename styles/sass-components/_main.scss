@@ -6,6 +6,10 @@
         flex: 3;
     }
 
+    .phones-section, .laptop-section {
+        padding-right: 125px;
+    }
+
     .editor-section {
         padding-top: 50px;
         padding-bottom: 50px;
@@ -73,7 +77,11 @@
         border-bottom-left-radius: 75px;
         display: flex;
         flex-direction: row;
-        padding: 100px 75px;
+        /*padding: 100px 75px;*/
+        /*padding: 100px 125px;*/
+        padding-top: 100px;
+        padding-left: 75px;
+        padding-bottom: 100px;
         position: relative;
 
         .image {
@@ -95,7 +103,7 @@
 
             p {
                 font-size: 16px;
-                padding-right: 50px;
+                /*padding-right: 50px;*/
                 line-height: 1.5;
             }
         }
@@ -103,5 +111,44 @@
 
     .laptop-section {
         padding-top: 100px;
+        padding-bottom: 100px;
+        display: flex;
+        flex-direction: row;
+
+        .image-container, .text-container {
+            flex: 1;
+        }
+
+        .image-container {
+            .image {
+                height: 100%;
+                width: 150%;
+                margin-left: -43%;
+            }
+        }
+
+        .text-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 50px;
+            padding: 50px;
+
+            .text-1, .text-2 {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+
+                h3 {
+                    font-size: 25px;
+                    color: $veryDarkBlue;
+                }
+
+                p {
+                    font-size: 16px;
+                    color: $darkGray;
+                }
+            }
+        }
     }
 }
