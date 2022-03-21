@@ -445,7 +445,7 @@ body .main .laptop-section .text-container .text-1 p, body .main .laptop-section
 }
 
 body .footer {
-  background-color: black;
+  background-color: #25252d;
   color: white;
   display: -webkit-box;
   display: -ms-flexbox;
