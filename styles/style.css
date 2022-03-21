@@ -215,8 +215,20 @@ body .header .title-container .buttons-container .learn-btn:hover {
   background: white;
 }
 
-body .main .section {
-  border: 3px solid green;
+body .main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body .main .editor-section, body .main .laptop-section {
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
 }
 
 body .main .editor-section {
@@ -311,5 +323,60 @@ body .main .editor-section .image-container {
 body .main .editor-section .image-container .image {
   height: 100%;
   width: 140%;
+}
+
+body .main .phones-section {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  background: url("../../images/bg-pattern-circles.svg");
+  background-repeat: no-repeat;
+  background-size: 70% 200%;
+  background-position: -200px -300px;
+  background-color: #2c2d3f;
+  border-top-right-radius: 75px;
+  border-bottom-left-radius: 75px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 100px 75px;
+  position: relative;
+}
+
+body .main .phones-section .image {
+  position: absolute;
+  height: 150%;
+  top: -65px;
+}
+
+body .main .phones-section .text {
+  color: white;
+  margin-left: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+}
+
+body .main .phones-section .text h2 {
+  font-size: 35px;
+}
+
+body .main .phones-section .text p {
+  font-size: 16px;
+  padding-right: 50px;
+  line-height: 1.5;
+}
+
+body .main .laptop-section {
+  padding-top: 100px;
 }
 /*# sourceMappingURL=style.css.map */

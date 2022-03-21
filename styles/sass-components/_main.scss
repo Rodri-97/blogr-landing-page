@@ -1,6 +1,9 @@
 .main {
-    .section {
-        border: 3px solid green;
+    display: flex;
+    flex-direction: column;
+
+    .editor-section, .laptop-section {
+        flex: 3;
     }
 
     .editor-section {
@@ -57,5 +60,48 @@
                 width: 140%;
             }
         }
+    }
+
+    .phones-section {
+        flex: 1;
+        background: url("../../images/bg-pattern-circles.svg");
+        background-repeat: no-repeat;
+        background-size: 70% 200%;
+        background-position: -200px -300px;
+        background-color: $grayBlue;
+        border-top-right-radius: 75px;
+        border-bottom-left-radius: 75px;
+        display: flex;
+        flex-direction: row;
+        padding: 100px 75px;
+        position: relative;
+
+        .image {
+            position: absolute;
+            height: 150%;
+            top: -65px;
+        }
+
+        .text {
+            color: white;
+            margin-left: 50%;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            h2 {
+                font-size: 35px;
+            }
+
+            p {
+                font-size: 16px;
+                padding-right: 50px;
+                line-height: 1.5;
+            }
+        }
+    }
+
+    .laptop-section {
+        padding-top: 100px;
     }
 }
