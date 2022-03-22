@@ -50,8 +50,12 @@ body {
 
 @media all and (max-width: 1000px) {
     body {
-        .header, .editor-section, .footer {
+        .header, .footer {
             padding-left: 30px;
+        }
+
+        .editor-section {
+            padding-left: 0;
         }
 
         .header, .footer {
