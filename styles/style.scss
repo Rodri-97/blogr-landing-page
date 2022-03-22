@@ -80,3 +80,13 @@ body {
         }
     }
 }
+
+@media all and (max-width: 800px) {
+    body {
+        .main {
+            .laptop-section {
+                padding-right: 0;
+            }
+        }
+    }
+}

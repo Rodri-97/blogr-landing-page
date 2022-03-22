@@ -521,10 +521,14 @@ body .main .laptop-section .image-container, body .main .laptop-section .text-co
           flex: 1;
 }
 
-body .main .laptop-section .image-container .image {
+body .main .laptop-section .image-container .desktop-laptop {
   height: 100%;
   width: 150%;
   margin-left: -43%;
+}
+
+body .main .laptop-section .image-container .mobile-laptop {
+  display: none;
 }
 
 body .main .laptop-section .text-container {
@@ -561,6 +565,37 @@ body .main .laptop-section .text-container .text-1 h3, body .main .laptop-sectio
 body .main .laptop-section .text-container .text-1 p, body .main .laptop-section .text-container .text-2 p {
   font-size: 16px;
   color: #646464;
+}
+
+@media all and (max-width: 800px) {
+  body .main .laptop-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body .main .laptop-section .image-container {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  body .main .laptop-section .image-container .desktop-laptop {
+    display: none;
+  }
+  body .main .laptop-section .image-container .mobile-laptop {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  body .main .laptop-section .text-container {
+    -webkit-box-flex: 2;
+        -ms-flex: 2;
+            flex: 2;
+    text-align: center;
+  }
 }
 
 body .footer {
@@ -627,6 +662,12 @@ body .footer .nav .nav-element:hover {
   }
   body .header, body .footer {
     padding-right: 30px;
+  }
+}
+
+@media all and (max-width: 800px) {
+  body .main .laptop-section {
+    padding-right: 0;
   }
 }
 /*# sourceMappingURL=style.css.map */
