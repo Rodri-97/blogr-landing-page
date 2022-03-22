@@ -47,3 +47,15 @@ body {
     @import "./sass-components/main";
     @import "./sass-components/footer";
 }
+
+@media all and (max-width: 1000px) {
+    body {
+        .header, .editor-section, .footer {
+            padding-left: 30px;
+        }
+
+        .header, .footer {
+            padding-right: 30px;
+        }
+    }
+}

@@ -34,7 +34,7 @@
         align-items: center;
         gap: 50px;
 
-        .nav {
+        .desktop-nav {
             display: flex;
             flex-direction: row;
             gap: 25px;
@@ -71,6 +71,10 @@
                     color: white;
                 }
             }
+        }
+
+        .mobile-nav-container {
+            display: none;
         }
     }
 
@@ -117,6 +121,34 @@
                     color: $lightRed;
                     background: white;
                 }
+            }
+        }
+    }
+}
+
+@media all and (max-width: 1000px) {
+    .header {
+        background-size: 250%;
+
+        .nav-container {
+            .desktop-nav, .buttons-container {
+                display: none;
+            }
+
+            .mobile-nav-container {
+                flex-grow: 1;
+                display: flex;
+                justify-content: end;
+
+                .hamburger {
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .title-container {
+            h1 {
+                text-align: center;
             }
         }
     }
