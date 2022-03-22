@@ -1,0 +1,39 @@
+.phones-section {
+    flex: 1;
+    background: url("../../images/bg-pattern-circles.svg");
+    background-repeat: no-repeat;
+    background-size: 70% 200%;
+    background-position: -200px -300px;
+    background-color: $grayBlue;
+    border-top-right-radius: 75px;
+    border-bottom-left-radius: 75px;
+    display: flex;
+    flex-direction: row;
+    padding-top: 100px;
+    padding-left: 75px;
+    padding-bottom: 100px;
+    position: relative;
+
+    .image {
+        position: absolute;
+        height: 150%;
+        top: -65px;
+    }
+
+    .text {
+        color: white;
+        margin-left: 50%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        h2 {
+            font-size: 35px;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+    }
+}

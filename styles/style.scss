@@ -44,7 +44,24 @@ body {
     }
 
     @import "./sass-components/header";
-    @import "./sass-components/main";
+
+    .main {
+        display: flex;
+        flex-direction: column;
+
+        .editor-section, .laptop-section {
+            flex: 3;
+        }
+    
+        .phones-section, .laptop-section {
+            padding-right: 125px;
+        }
+
+        @import "./sass-components/editor-section";
+        @import "./sass-components/phones-section";
+        @import "./sass-components/laptop-section";
+    }
+
     @import "./sass-components/footer";
 }
 

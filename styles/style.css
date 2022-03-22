@@ -365,6 +365,53 @@ body .main .editor-section .image-container .mobile-editor {
   display: none;
 }
 
+@media all and (max-width: 1000px) {
+  body .main .editor-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body .main .editor-section .title-container {
+    position: static;
+  }
+  body .main .editor-section .title-container .title {
+    position: static;
+    width: 100%;
+    text-align: center;
+  }
+  body .main .editor-section .image-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body .main .editor-section .image-container .desktop-editor {
+    display: none;
+  }
+  body .main .editor-section .image-container .mobile-editor {
+    display: block;
+  }
+  body .main .editor-section .text-container {
+    text-align: center;
+  }
+  body .main .editor-section .text-container .text-1, body .main .editor-section .text-container .text-2 {
+    padding: 0 20px;
+  }
+}
+
 body .main .phones-section {
   -webkit-box-flex: 1;
       -ms-flex: 1;
@@ -475,53 +522,6 @@ body .main .laptop-section .text-container .text-1 h3, body .main .laptop-sectio
 body .main .laptop-section .text-container .text-1 p, body .main .laptop-section .text-container .text-2 p {
   font-size: 16px;
   color: #646464;
-}
-
-@media all and (max-width: 1000px) {
-  body .main .editor-section {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  body .main .editor-section .title-container {
-    position: static;
-  }
-  body .main .editor-section .title-container .title {
-    position: static;
-    width: 100%;
-    text-align: center;
-  }
-  body .main .editor-section .image-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  body .main .editor-section .image-container .desktop-editor {
-    display: none;
-  }
-  body .main .editor-section .image-container .mobile-editor {
-    display: block;
-  }
-  body .main .editor-section .text-container {
-    text-align: center;
-  }
-  body .main .editor-section .text-container .text-1, body .main .editor-section .text-container .text-2 {
-    padding: 0 20px;
-  }
 }
 
 body .footer {

@@ -1,0 +1,104 @@
+.editor-section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "title image"
+    "text image"
+    "text image"
+    "text image";
+
+    .title-container {
+        grid-area: title;
+        @include flexCenter(row);
+        position: relative;
+
+        .title {
+            font-size: 35px;
+            color: $veryDarkBlue;
+            position: absolute;
+            width: 120%;
+            left: 0;
+            text-align: right;
+        }
+    }
+
+    .text-container {
+        grid-area: text;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        gap: 40px;
+        padding: 20px;
+
+        .text-1, .text-2 {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            padding-bottom: 20px;
+
+            h3 {
+                font-size: 25px;
+                color: $veryDarkBlue;
+            }
+
+            p {
+                font-size: 16px;
+                color: $darkGray;
+            }
+        }
+    }
+
+    .image-container {
+        grid-area: image;
+        overflow: hidden;
+
+        .desktop-editor {
+            height: 100%;
+            width: 140%;
+        }
+
+        .mobile-editor {
+            display: none;
+        }
+    }
+}
+
+@media all and (max-width: 1000px) {
+    .editor-section {
+        display: flex;
+        flex-direction: column;
+
+        .title-container {
+            position: static;
+
+            .title {
+                position: static;
+                width: 100%;
+                text-align: center;
+            }
+        }
+
+        .image-container {
+            @include flexCenter(row);
+
+            .desktop-editor {
+                display: none;
+            }
+
+            .mobile-editor {
+                display: block;
+            }
+        }
+
+        .text-container {
+            text-align: center;
+
+            .text-1, .text-2 {
+                padding: 0 20px;
+            }
+        }
+    }
+}
