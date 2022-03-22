@@ -365,6 +365,12 @@ body .main .editor-section .image-container .mobile-editor {
   display: none;
 }
 
+@media all and (max-width: 1200px) {
+  body .main .editor-section {
+    padding-bottom: 275px;
+  }
+}
+
 @media all and (max-width: 1000px) {
   body .main .editor-section {
     display: -webkit-box;
@@ -462,6 +468,39 @@ body .main .phones-section .text h2 {
 body .main .phones-section .text p {
   font-size: 16px;
   line-height: 1.5;
+}
+
+@media all and (max-width: 1200px) {
+  body .main .phones-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 200px 20px 100px 20px;
+  }
+  body .main .phones-section .image {
+    height: 400px;
+    width: 350px;
+    top: -210px;
+    margin: auto;
+    left: 0;
+    right: 0;
+  }
+  body .main .phones-section .text {
+    margin-left: 0;
+    text-align: center;
+    padding: 0 20px;
+  }
+}
+
+@media all and (max-width: 800px) {
+  body .main .phones-section {
+    background-size: 120% 120%;
+    background-position: -50px -200px;
+  }
 }
 
 body .main .laptop-section {

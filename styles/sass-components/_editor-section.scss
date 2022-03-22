@@ -66,6 +66,12 @@
     }
 }
 
+@media all and (max-width: 1200px) {
+    .editor-section {
+        padding-bottom: 275px;
+    }
+}
+
 @media all and (max-width: 1000px) {
     .editor-section {
         display: flex;

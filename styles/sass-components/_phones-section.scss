@@ -37,3 +37,33 @@
         }
     }
 }
+
+@media all and (max-width: 1200px) {
+    .phones-section {
+        display: flex;
+        flex-direction: column;
+        padding: 200px 20px 100px 20px;
+
+        .image {
+            height: 400px;
+            width: 350px;
+            top: -210px;
+            margin: auto;
+            left: 0;
+            right: 0;
+        }
+
+        .text {
+            margin-left: 0;
+            text-align: center;
+            padding: 0 20px;
+        }
+    }
+}
+
+@media all and (max-width: 800px) {
+    .phones-section {
+        background-size: 120% 120%;
+        background-position: -50px -200px;
+    }
+}
