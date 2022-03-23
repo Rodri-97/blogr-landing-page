@@ -418,6 +418,12 @@ body .main .editor-section .image-container .mobile-editor {
   }
 }
 
+@media all and (max-width: 350px) {
+  body .main .editor-section .title-container .title {
+    font-size: 30px;
+  }
+}
+
 body .main .phones-section {
   -webkit-box-flex: 1;
       -ms-flex: 1;
@@ -500,6 +506,14 @@ body .main .phones-section .text p {
   body .main .phones-section {
     background-size: 120% 120%;
     background-position: -50px -200px;
+  }
+}
+
+@media all and (max-width: 350px) {
+  body .main .phones-section .image {
+    height: 250px;
+    width: 200px;
+    top: -100px;
   }
 }
 

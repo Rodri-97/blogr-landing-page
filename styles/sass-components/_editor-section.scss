@@ -108,3 +108,13 @@
         }
     }
 }
+
+@media all and (max-width: 350px) {
+    .editor-section {
+        .title-container {
+            .title {
+                font-size: 30px;
+            }
+        }
+    }
+}
