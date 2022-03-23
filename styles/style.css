@@ -482,7 +482,7 @@ body .main .editor-section .image-container .mobile-editor {
   }
 }
 
-@media all and (max-width: 350px) {
+@media all and (max-width: 500px) {
   body .main .editor-section .title-container .title {
     font-size: 30px;
   }
