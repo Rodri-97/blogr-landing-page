@@ -229,7 +229,7 @@ body .header .title-container .buttons-container .learn-btn:hover {
 
 @media all and (max-width: 1000px) {
   body .header {
-    background-image: url("/images/bg-pattern-intro-mobile.svg");
+    background-image: url("../images/bg-pattern-intro-mobile.svg");
     background-size: 250%;
   }
   body .header .nav-container .desktop-nav, body .header .nav-container .buttons-container {
