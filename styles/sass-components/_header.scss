@@ -22,6 +22,31 @@
         border-width: 3px;
     }
 
+    .login-btn, .signup-btn {
+        padding-left: 30px;
+        padding-right: 30px;
+        border-color: transparent;
+
+        &:hover {
+            border-color: white;
+        }
+    }
+
+    .login-btn {
+        background: transparent;
+        color: white;
+    }
+
+    .signup-btn {
+        background: white;
+        color: $lightRed;
+
+        &:hover {
+            background: transparent;
+            color: white;
+        }
+    }
+
     .nav-container, .title-container {
         padding-bottom: 125px;
     }
@@ -38,6 +63,10 @@
             display: flex;
             flex-direction: row;
             gap: 25px;
+
+            div {
+                cursor: pointer;
+            }
         }
 
         .buttons-container {
@@ -46,36 +75,15 @@
             flex-direction: row;
             justify-content: end;
             align-items: center;
-
-            .login-btn, .signup-btn {
-                padding-left: 30px;
-                padding-right: 30px;
-                border-color: transparent;
-
-                &:hover {
-                    border-color: white;
-                }
-            }
-
-            .login-btn {
-                background: transparent;
-                color: white;
-            }
-
-            .signup-btn {
-                background: white;
-                color: $lightRed;
-
-                &:hover {
-                    background: transparent;
-                    color: white;
-                }
-            }
         }
 
-        .mobile-nav-container {
+        .icon-container {
             display: none;
         }
+    }
+
+    .mobile-nav {
+        display: none;
     }
 
     .title-container {
@@ -136,13 +144,66 @@
                 display: none;
             }
 
-            .mobile-nav-container {
+            .icon-container {
                 flex-grow: 1;
                 display: flex;
                 justify-content: end;
 
-                .hamburger {
+                .hamburger, .close {
                     cursor: pointer;
+                }
+
+                .hamburger.hide {
+                    display: none;
+                }
+
+                .close {
+                    display: none;
+                }
+
+                .close.show {
+                    display: block;
+                }
+            }
+        }
+
+        .mobile-nav.show {
+            @include flexCenter(column);
+            position: absolute;
+            top: 120px;
+            width: 90%;
+            height: 300px;
+            background-color: white;
+            color: $grayBlue;
+            font-weight: bold;
+            font-size: 16px;
+            left: 0; 
+            right: 0; 
+            margin-left: auto; 
+            margin-right: auto; 
+            padding: 0;
+
+            div {
+                cursor: pointer;
+                padding-bottom: 20px;
+            }
+
+            .login-btn {
+                color: $grayBlue;
+
+                &:hover {
+                    border-color: $grayBlue;
+                }
+            }
+
+            .signup-btn {
+                color: white;
+                background-color: $lightRed;
+
+                &:hover {
+                    color: $lightRed;
+                    background-color: white;
+                    border-color: $lightRed;
                 }
             }
         }
